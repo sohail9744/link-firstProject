@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon-Images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-Images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-Images/favicon-16x16.png"
+    />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/linkedin-home-page.css" />
+    <header class="header-container">
+      <div class="image-container">
+        <img
+          width="33px"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png"
+          alt=""
+        />
+        <!-- <div class="search-image-field"> -->
+        <div class="searchfieldAndsearchIcon">
+          <!-- <span> -->
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/9177/9177086.png"
+            width="15px"
+            alt="searchIcon"
+          />
+          <!-- </span> -->
+          <input class="searchFieldInput" placeholder="Search" type="text" />
+          <!-- </div> -->
+        </div>
+      </div>
+
+      <div class="headerMenu-container">
+        <span onclick="onClick(event)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            data-supported-dps="24x24"
+            fill="rgb(102 102 102)"
+            class="mercado-match"
+            width="24"
+            height="24"
+            focusable="false"
+          >
+            <path
+              d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"
+            ></path>
+          </svg>
+          <label for="">Home</label>
+        </span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            data-supported-dps="24x24"
+            fill="rgb(102 102 102)"
+            class="mercado-match"
+            width="24"
+            height="24"
+            focusable="false"
+          >
+            <path
+              d="M12 6.5a4.5 4.5 0 114.5 4.5A4.49 4.49 0 0112 6.5zm6 6.5h-3a3 3 0 00-3 3v6h9v-6a3 3 0 00-3-3zM6.5 6A3.5 3.5 0 1010 9.5 3.5 3.5 0 006.5 6zm1 9h-2A2.5 2.5 0 003 17.5V22h7v-4.5A2.5 2.5 0 007.5 15z"
+            ></path>
+          </svg>
+          <label for="">My Network</label>
+        </span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            data-supported-dps="24x24"
+            fill="rgb(102 102 102)"
+            class="mercado-match"
+            width="24"
+            height="24"
+            focusable="false"
+          >
+            <path
+              d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"
+            ></path>
+          </svg>
+          <label for="">Jobs</label>
+        </span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            data-supported-dps="24x24"
+            fill="rgb(102 102 102)"
+            class="mercado-match"
+            width="24"
+            height="24"
+            focusable="false"
+          >
+            <path
+              d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"
+            ></path>
+          </svg>
+          <label for="">Messaging</label>
+        </span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            data-supported-dps="24x24"
+            fill="rgb(102 102 102)"
+            class="mercado-match"
+            width="24"
+            height="24"
+            focusable="false"
+          >
+            <path
+              d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"
+            ></path>
+          </svg>
+          <label for="">Notification</label>
+        </span>
+      </div>
+      <div class="profiles">
+        <img
+          style="border-radius: 15px"
+          width="24"
+          src="https://dp.profilepics.in/profile_pictures/arab-boys/arab-stylish-boys-pics-dp-for-whatsapp-facebook-26.jpg"
+          height="24"
+          alt="Mohammad Sohail Khan"
+          id="ember16"
+          class="global-nav__me-photo ember-view"
+        />
+        <label for="">Me</label>
+      </div>
+      <!-- <span><img src="" alt="work" /></span>
+            <span><img src="" alt="postjobs" /></span> -->
+
+      <div class="profile">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          data-supported-dps="24x24"
+          fill="rgb(102 102 102)"
+          class="mercado-match"
+          width="24"
+          height="24"
+          focusable="false"
+        >
+          <path
+            d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"
+          ></path>
+        </svg>
+        <label for="">Work</label>
+      </div>
+      <div class="profile">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          data-supported-dps="24x24"
+          fill="rgb(102 102 102)"
+          width="24"
+          height="24"
+          focusable="false"
+        >
+          <circle
+            cx="12"
+            cy="4"
+            r="2"
+            style="isolation: isolate"
+            opacity=".75"
+          ></circle>
+          <path
+            d="M21 10H3a1 1 0 00-1 1v10a1 1 0 001 1h18a1 1 0 001-1V11a1 1 0 00-1-1zm-5 9H8v-2h8v2zm2-4H6v-2h12v2z"
+          ></path>
+          <g opacity=".6">
+            <path
+              d="M9.57 5.75l-2.41 4.83 1.68.84 2.28-4.57a3 3 0 01-1.55-1.1zM14.43 5.75a3 3 0 01-1.55 1.1l2.28 4.57 1.68-.84z"
+              style="isolation: isolate"
+              opacity=".55"
+            ></path>
+          </g>
+        </svg>
+        <label for="">Post a Job</label>
+      </div>
+    </header>
+  </head>
+  <body>
+    <section class="grid-layout">
+      <section class="first-section">
+        <div class="background-image">
+          <img
+            src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
+            alt=""
+          />
+          <span class="profile-image">
+            <img
+              src="https://dp.profilepics.in/profile_pictures/arab-boys/arab-stylish-boys-pics-dp-for-whatsapp-facebook-26.jpg"
+              alt=""
+            />
+          </span>
+        </div>
+        <div class="userDetails">
+          <a href="#">Mohammad Sohail khan</a>
+          <p>
+            SAP FIORI UI5 developer || SAP BTP developer || HANA || React.js
+          </p>
+        </div>
+        <!-- <div class="offerDetailsContainer"> -->
+        <div class="analytics-tools">
+          <label for="">Analytics & tools</label>
+          <p>50 post impression</p>
+        </div>
+        <div class="try-premium-card">
+          <label for="">Achieve your goal faster with premium</label>
+          <div style="display: flex; gap: 4px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              class="mercado-match"
+              width="20"
+              height="20"
+              focusable="false"
+            >
+              <path
+                d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z"
+                fill="#f8c77e"
+              ></path>
+              <path
+                d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z"
+                fill="#e7a33e"
+              ></path>
+            </svg>
+            <a href="#" style="color: black; font-weight: 500; font-size: 13px"
+              >Try premium free + up to 25% off</a
+            >
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+          <symbol id="bookmark-fill-small" viewBox="0 0 16 16">
+            <path d="M5 1h6a2 2 0 0 1 2 2v12l-6-3-6 3V3a2 2 0 0 1 2-2z"></path>
+          </symbol>
+        </svg>
+        <div class="onBookmark">
+          <svg
+            role="none"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="black"
+            data-supported-dps="16x16"
+            data-test-icon="bookmark-fill-small"
+          >
+            <use href="#bookmark-fill-small" width="16" height="16"></use>
+          </svg>
+          <label for="">My Items</label>
+        </div>
+      </section>
+      <section class="second-section">
+        <div class="theSpacing">
+          <h5>Recent</h5>
+          <ul id="unorderList"></ul>
+          <a href="#">Group</a>
+          <ul id="groupList"></ul>
+          <div
+            class="event"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <a href="#">Events</a>
+            <div>
+              <img
+                class="plusIcon"
+                style="padding: 6px"
+                src="https://cdn-icons-png.flaticon.com/512/748/748113.png"
+                width="11px"
+                alt=""
+              />
+            </div>
+          </div>
+          <a href="#">followed Hashtags</a>
+        </div>
+        <div class="dicoverMore">
+          <p style="margin: 0">Discover More</p>
+        </div>
+      </section>
+      <section class="third-section">
+        <div class="imageAndinput">
+          <!-- <span> -->
+          <img
+            class="theProfileimage"
+            src="https://dp.profilepics.in/profile_pictures/arab-boys/arab-stylish-boys-pics-dp-for-whatsapp-facebook-26.jpg"
+            alt=""
+          />
+          <!-- </span> -->
+          <div class="input-container">
+            <input type="text" placeholder="Start a Post" />
+          </div>
+        </div>
+        <div class="icons">
+          <div class="iconsDivClass">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="#7171ea"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"
+              ></path>
+            </svg>
+            <h5 style="margin: 0">Photo</h5>
+          </div>
+          <div class="iconsDivClass">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="green"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"
+              ></path>
+            </svg>
+            <h5 style="margin: 0">Video</h5>
+          </div>
+          <div class="iconsDivClass">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="purple"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"
+              ></path>
+            </svg>
+            <h5 style="margin: 0">job</h5>
+          </div>
+          <div class="iconsDivClass">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="#91b539"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"
+              ></path>
+            </svg>
+            <h5 style="margin: 0">Write article</h5>
+          </div>
+        </div>
+      </section>
+      <section class="forth-section">
+        <div class="linkedinInfo">
+          <h5 style="margin: 0">LinkedIn News</h5>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            data-supported-dps="16x16"
+            fill="currentColor"
+            class="mercado-match"
+            width="16"
+            height="16"
+            focusable="false"
+          >
+            <path
+              d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zm-3 8v2H7.5A1.5 1.5 0 016 10.5a1.56 1.56 0 01.1-.5l1.08-3h2.13l-1.09 3zm0-3.75A1.25 1.25 0 1110.25 5 1.25 1.25 0 019 6.25z"
+            ></path>
+          </svg>
+        </div>
+        <ul id="linkedinNewsCard" class="updateUnOrderList">
+          <!-- <li>
+            <a href="#">LeaderShip churn at IT giants</a>
+            <p>12h ago . 1,332 readers</p>
+          </li> -->
+        </ul>
+      </section>
+      <section class="fifth-section" style="cursor: pointer">
+        <div class="advertisMent">
+          <span>Ad</span>
+          <span class="material-symbols-outlined"> more_horiz </span>
+        </div>
+        <div class="nested-container">
+          <p style="margin: 0">
+            Get start Quick with templates and customize as you grow
+          </p>
+          <div class="adImages">
+            <img
+              width="30%"
+              style="border-radius: 39px"
+              src="https://dp.profilepics.in/profile_pictures/arab-boys/arab-stylish-boys-pics-dp-for-whatsapp-facebook-26.jpg"
+              alt=""
+            />
+            <!-- <span > -->
+            <img
+              style="
+                display: inline-block;
+                border-radius: 60px;
+                border: 1px solid #0000001a;
+              "
+              width="30%"
+              src="https://d25hn4jiqx5f7l.cloudfront.net/companies/logos/original/vidhya-skill-school_1659861511.png?1659861511"
+              alt=""
+            />
+          </div>
+          <p style="margin: 0">
+            Jira software is designed for security and scale
+          </p>
+          <button class="b-startForFree">Start for free</button>
+          <!-- </span> -->
+        </div>
+      </section>
+      <section class="sixth-section">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Accessiblity</a></li>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Privacy & Terms</a></li>
+          <li><a href="#">Ad Choices</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business services</a></li>
+          <li><a href="#">Get The linkedin app</a></li>
+          <li><a href="#">More</a></li>
+        </ul>
+        <div
+          style="
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 56 14"
+            data-supported-dps="56x14"
+            fill="#0a66c2"
+            class="mercado-match"
+            width="56"
+            height="14"
+            focusable="false"
+          >
+            <g>
+              <path
+                class="background-mercado"
+                d="M22.1 8.2l3.09 3.8h-2.44L20 8.51V12h-2V2h2v5.88L22.54 5h2.55zm-8-3.4A2.71 2.71 0 0011.89 6V5H10v7h2V8.73a1.74 1.74 0 011.66-1.93C14.82 6.8 15 7.94 15 8.73V12h2V8.29c0-2.2-.73-3.49-2.86-3.49zM32 8.66a4.22 4.22 0 010 .44h-5.25v.07a1.79 1.79 0 001.83 1.43 2.51 2.51 0 001.84-.69l1.33 1a4.31 4.31 0 01-3.25 1.29 3.49 3.49 0 01-3.7-3.75 3.58 3.58 0 013.76-3.65C30.44 4.8 32 6.13 32 8.66zm-1.86-.86a1.46 1.46 0 00-1.59-1.4 1.64 1.64 0 00-1.8 1.4zM2 2H0v10h6v-2H2zm36 0h2v10h-1.89v-.7a2.44 2.44 0 01-2 .9 3.41 3.41 0 01-3.31-3.7 3.36 3.36 0 013.3-3.7 2.62 2.62 0 011.9.7zm.15 6.5a1.63 1.63 0 00-1.62-1.85A1.76 1.76 0 0034.9 8.5a1.76 1.76 0 001.63 1.85 1.63 1.63 0 001.62-1.85zM8 1.8A1.27 1.27 0 006.75 3a1.25 1.25 0 002.5 0A1.27 1.27 0 008 1.8zM7 12h2V5H7zM56 1v12a1 1 0 01-1 1H43a1 1 0 01-1-1V1a1 1 0 011-1h12a1 1 0 011 1zM46 5h-2v7h2zm.25-2a1.25 1.25 0 00-2.5 0 1.25 1.25 0 002.5 0zM54 8.29c0-2.2-.73-3.49-2.86-3.49A2.71 2.71 0 0048.89 6V5H47v7h2V8.73a1.74 1.74 0 011.66-1.93C51.82 6.8 52 7.94 52 8.73V12h2z"
+              ></path>
+            </g>
+          </svg>
+          <p style="font-size: smaller; margin: 0">
+            LinkedIn Corporation © 2023
+          </p>
+        </div>
+      </section>
+      <div class="artdropDown">
+        <div class="sortBorder"></div>
+        <button>Sort by:Top</button>
+      </div>
+      <section class="seventh-section">
+        <section class="allPosts">
+          <div class="theContainer">
+            <div class="image-profileName">
+              <img
+                class="thesmallProfileimage"
+                src="https://img1.kpopmap.com/2016/05/boys24g.jpg"
+                alt=""
+              />
+              <a href="#">Mohammad Bilal</a>
+              <p style="margin: 0">finds this insightful</p>
+            </div>
+            <span class="material-symbols-outlined"> more_horiz </span>
+          </div>
+          <div class="main-container-profiledetail">
+            <div class="I-profileDetail">
+              <img
+                class="theMediumProfileimage"
+                src="https://library.ascd.org/m/f3244fdde05d428/webimage-PLS_Banner_1000x1000.png"
+                alt=""
+              />
+              <div class="profileInfo">
+                <a href="#">MASROOR Hussain</a>
+                <p style="margin: 0">Full stack developer at Google</p>
+                <p style="margin: 0">5d</p>
+              </div>
+            </div>
+            <span class="b-postFollowButton">
+              <img
+                src="./Images/icons8-plus-math-26.png"
+                width="16"
+                height="16"
+                alt=""
+              />
+              <button class="b-follow">Follow</button>
+            </span>
+          </div>
+          <p
+            style="
+              font-size: small;
+              font-family: var(--artdeco-reset-typography-font-family-sans);
+            "
+          >
+            With just a click, you can now add instructions to identify your pet
+            at home, making it engaging for users and crucial for delivery
+            person. Great job,
+            <span>
+              <a class="zomatoLink" href="">Zomato!</a>
+            </span>
+          </p>
+          <div class="video-container">
+            <img
+              src="https://media.licdn.com/dms/image/D5622AQFYLdmIVdlmaQ/feedshare-shrink_800/0/1679731299699?e=1682553600&amp;v=beta&amp;t=wIuEcZwSIiqvg1ma9-Aphh38ZRmLy2efag6CFxtUtVM"
+              loading="lazy"
+              alt="Image preview"
+              id="ember1043"
+              class="everyPhotoVideo"
+            />
+          </div>
+          <div class="like-buttons">
+            <button
+              aria-label="2,552 reactions on Suraj Sinha’s post"
+              class="b-clikcOnLikeButton"
+              type="button"
+            >
+              <img
+                class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--0 reactions-icon__consumption--small data-test-reactions-icon-type-LIKE data-test-reactions-icon-theme-light"
+                src="https://static.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt"
+                alt="like"
+                data-test-reactions-icon-type="LIKE"
+                data-test-reactions-icon-theme="light"
+              />
+
+              <img
+                class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--1 reactions-icon__consumption--small reactions-icon--stacked data-test-reactions-icon-type-EMPATHY data-test-reactions-icon-theme-light"
+                src="https://static.licdn.com/sc/h/cpho5fghnpme8epox8rdcds22"
+                alt="love"
+                data-test-reactions-icon-type="EMPATHY"
+                data-test-reactions-icon-theme="light"
+              />
+
+              <img
+                class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--2 reactions-icon__consumption--small reactions-icon--stacked data-test-reactions-icon-type-APPRECIATION data-test-reactions-icon-theme-light"
+                src="https://static.licdn.com/sc/h/3wqhxqtk2l554o70ur3kessf1"
+                alt="support"
+                data-test-reactions-icon-type="APPRECIATION"
+                data-test-reactions-icon-theme="light"
+              />
+              <span aria-hidden="true" class="social-details-ions-count"
+                >2,552</span
+              >
+            </button>
+            <span>
+              <li style="display: inline">27 comments</li>
+              <button style="background: transparent; border: none">
+                <li>24 repost</li>
+              </button>
+            </span>
+          </div>
+          <div class="icons-b">
+            <div class="iconsDivClass-b">
+              <img
+                src="./Images/likeButton.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
+              <h5 style="margin: 0">Like</h5>
+            </div>
+            <div class="iconsDivClass-b">
+              <img src="./Images/comment.svg" width="24" height="24" alt="" />
+              <h5 style="margin: 0">Comment</h5>
+            </div>
+            <div class="iconsDivClass-b">
+              <img
+                src="./Images/repostbutton.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
+              <h5 style="margin: 0">Repost</h5>
+            </div>
+            <div class="iconsDivClass-b">
+              <img src="./Images/send.svg" width="24" height="24" alt="" />
+              <h5 style="margin: 0">Send</h5>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="message-Box">
+      <div class="profile-text">
+        <img
+          style="max-width: 20%; border-radius: 43px"
+          src="https://dp.profilepics.in/profile_pictures/arab-boys/arab-stylish-boys-pics-dp-for-whatsapp-facebook-26.jpg"
+          alt=""
+        />
+        <label for="">Messaging</label>
+        <div class="profileStatus"></div>
+      </div>
+      <div class="messageBox-icons">
+        <img src="./Images/messageBox-infoicon.svg" style="padding: 10px; border-radius: 19px;" width="15px" height="15px" alt="">
+        <img src="./Images/writeicon.svg" style="padding: 10px; border-radius: 19px;" width="15px" height="15px"  alt="">
+        <img src="./Images/arrowUp.svg" style="padding: 10px; border-radius: 19px;" width="15px" height="15px" alt="">
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const groupData = [
+      {
+        groupName: "LeaderShip",
+        nesDes: "12h ago . 1,332 readers",
+      },
+      {
+        groupName: "Javascript group",
+        nesDes: "12h ago . 1,332 readers",
+      },
+      {
+        groupName: "Taking a gap year",
+        nesDes: "12h ago . 1,332 readers",
+      },
+      {
+        groupName: "React community",
+        nesDes: "12h ago . 1,332 readers",
+      },
+      {
+        groupName: "Angular",
+        nesDes: "12h ago . 1,332 readers",
+      },
+      {
+        groupName: "Full stack development",
+        nesDes: "12h ago . 1,332 readers",
+      },
+      {
+        groupName: "Taking a gap year",
+        nesDes: "12h ago . 1,332 readers",
+      },
+    ];
+    groupData.forEach(function (item) {
+      const list = document.getElementById("unorderList");
+      const groupList = document.getElementById("groupList");
+      const newLi = document.createElement("li");
+      const newGl = document.createElement("li");
+      const liHtml = `
+     <span style="display: flex; gap: 8px">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                data-supported-dps="16x16"
+                fill="rgb(102 102 102)"
+                class="mercado-match"
+                width="16"
+                height="16"
+                focusable="false"
+              >
+                <path
+                  d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"
+                ></path>
+                <circle cx="8" cy="4" r="2"></circle>
+                <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                <path
+                  d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"
+                ></path>
+                <circle cx="3.5" cy="5.5" r="1.5"></circle>
+              </svg>
+              <label for="">${item.groupName}</label>
+            </span>
+    `;
+      newLi.innerHTML = liHtml;
+      newGl.innerHTML = liHtml;
+      groupList.appendChild(newGl);
+      list.appendChild(newLi);
+    });
+
+    const jsonData = [
+      {
+        newsTitle: "LeaderShip churn at IT giants",
+        nesDes: "1h ago . 1,332 readers",
+      },
+      {
+        newsTitle: "LeaderShip imperative",
+        nesDes: "2h ago . 1,332 readers",
+      },
+      {
+        newsTitle: "Taking a gap year",
+        nesDes: "5h ago . 1,332 readers",
+      },
+      {
+        newsTitle: "Taking a gap year",
+        nesDes: "5h ago . 1,332 readers",
+      },
+      {
+        newsTitle: "Taking a gap year",
+        nesDes: "12h ago . 1,332 readers",
+      },
+      {
+        newsTitle: "Taking a gap year",
+        nesDes: "12h ago . 1,332 readers",
+      },
+      {
+        newsTitle: "Taking a gap year",
+        nesDes: "18h ago . 1,332 readers",
+      },
+    ];
+
+    jsonData.forEach(function (item) {
+      const linkedinNewsCards = document.getElementById("linkedinNewsCard");
+      const createLi = document.createElement("li");
+      const newsTitle = "LeaderShip churn at IT giants";
+      const newsDes = "12h ago . 1,332 readers";
+      const newLiHtml = `
+     <a href="#">${item.newsTitle}</a>
+            <p>${item.nesDes}</p>
+    `;
+      createLi.innerHTML = newLiHtml;
+      linkedinNewsCards.appendChild(createLi);
+    });
+    function onClick(event) {
+      const clickedElement = event.target;
+      clickedElement.setAttribute("fill", "black");
+      clickedElement.style.fontWeight = 500;
+    }
+    //rendering the cards
+  </script>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon-Images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-Images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-Images/favicon-16x16.png"
+    />
+    <title>Sign In | Linkedin</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        margin: 28px 0px 0px 39px;
+      }
+      .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .subContainer {
+        padding: 32px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        width: 23%;
+      }
+      .div1 h1 {
+        margin: 0;
+        font-size: 31px;
+        font-family: sans-serif;
+        font-weight: 600;
+      }
+      .div1 p {
+        font-size: 13px;
+        line-height: 1.42857;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.9);
+        margin-top: 2px;
+        font-family: system-ui;
+      }
+      .div2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+      .div2 input {
+        padding: 14px;
+        font-size: 16px;
+        border-radius: 6px;
+        border: 1px solid black;
+      }
+      .div2 input:focus {
+        outline: none;
+        /* border: none; */
+        border: 1px solid transparent;
+        box-shadow: 0 0 0 1px var(--color-action, #0a66c2);
+      }
+      .d-emailInput {
+        margin-bottom: 13px;
+      }
+      .div2 span {
+        position: absolute;
+        right: 7px;
+        bottom: 48px;
+        font-size: small;
+        font-family: system-ui;
+        padding: 3px 5px 3px 5px;
+        color: #0a66c2;
+        font-weight: 600;
+        border-radius: 17px;
+        cursor: pointer;
+      }
+      .div2 span:hover {
+        background-color: var(
+          --color-background-none-tint-action-active,
+          #d0e8ff
+        );
+        transition: 0.068s;
+      }
+      .div2 a {
+        font-family: system-ui;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 3px 8px 3px 8px;
+        width: 122px;
+        border-radius: 17px;
+        margin: 8px 0px 0px 0px;
+        position: relative;
+        left: -6px;
+      }
+      .div2 a:hover {
+        background-color: var(
+          --color-background-none-tint-action-active,
+          #d0e8ff
+        );
+        transition: 0.08s;
+        text-decoration: underline;
+      }
+      .div3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .signIn-b {
+        width: 100%;
+        /* overflow: hidden; */
+        border: none;
+        background-color: #0a66c2;
+        padding: 15px;
+        border-radius: 30px;
+        color: white;
+        font-family: system-ui;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 19px;
+        font-size: initial;
+      }
+      .signIn-b:hover {
+        background-color: #006097;
+        color: #fff;
+      }
+      .line-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 11px 0px 11px 0px;
+      }
+      .line-container::before {
+        content: "";
+        width: 50%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+      .line-container::after {
+        content: "";
+        width: 50%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+      .text {
+        font-size: 14px;
+        font-family: system-ui;
+        font-weight: 300;
+        margin: 0px 10px 0px 10px;
+        color: rgb(0 0 0);
+      }
+      .b-google-apple {
+        width: 100%;
+        /* overflow: hidden; */
+        border: 1px solid;
+        padding: 15px;
+        border-radius: 30px;
+        color: rgba(0, 0, 0, 0.9);
+        font-family: "Google Sans", arial, sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 19px;
+        width: 100%;
+      }
+      .nested-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        border: 1px solid black;
+        /* padding: 12px; */
+        border-radius: 24px;
+        height: 36px;
+      }
+      .b-container {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-family: sans-serif;
+        font-size: medium;
+      }
+      .b-sign-up {
+        display: flex;
+        gap: 4px;
+        justify-content: center;
+        align-items: center;
+        font-size: medium;
+        font-family: system-ui;
+      }
+      .b-sign-up a {
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 3px 8px 3px 8px;
+        border-radius: 17px;
+        color: #0a66c2;
+      }
+      .b-sign-up a:hover {
+        background-color: var(
+          --color-background-none-tint-action-active,
+          #d0e8ff
+        );
+        transition: 0.68s;
+        text-decoration: underline;
+      }
+      footer {
+        display: flex;
+        gap: 15px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.568);
+        margin-bottom: 24px;
+        margin-top: 23px;
+        font-size: smaller;
+        font-family: system-ui;
+      }
+      footer a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.568);
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      .validationInfo {
+        position: absolute;
+        right: 2px;
+        bottom: 4px;
+        margin: 0;
+        color: red;
+        font-family: sans-serif;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <header class="header">
+    <img
+      width="128px"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
+      alt=""
+    />
+  </header>
+  <body>
+    <div class="main-container">
+      <div class="subContainer">
+        <div class="div1">
+          <h1>Sign In</h1>
+          <p>Stay updated on your professional world</p>
+        </div>
+        <div id="form" class="div2">
+          <input
+            class="d-emailInput"
+            type="text"
+            placeholder="Email or Phone"
+            name=""
+            id="input1"
+          />
+          <input type="password" placeholder="Password" name="" id="input2" />
+          <span id="showPassword" onclick="showPassword(true)">Show</span>
+          <a href="#">Forgot password?</a>
+          <p id="validationMessage" class="validationInfo"></p>
+        </div>
+        <div class="div3">
+          <button onclick="onHandleSign()" class="signIn-b">Sign In</button>
+          <div class="line-container">
+            <!-- <div class="line"></div> -->
+            <span class="text">Or</span>
+            <!-- <div class="line"></div> -->
+          </div>
+          <div class="b-container">
+            <div class="nested-content">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+                width="22px"
+                alt=""
+              />
+              <p for="">Continue with Google</p>
+            </div>
+            <div class="nested-content">
+              <img
+                src="https://media.idownloadblog.com/wp-content/uploads/2018/07/Apple-logo-black-and-white.png"
+                width="22px"
+                alt=""
+              />
+              <p for="">Sign in with Apple</p>
+            </div>
+            <div class="b-sign-up">
+              <p style="margin: 0">New to LinkedIn?</p>
+              <a style="margin: 0" href="#">Join Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <img
+          src="https://www.pngitem.com/pimgs/m/27-278610_linkedin-logo-transparent-linkedin-logo-vector-hd-png.png"
+          width="62px"
+          alt=""
+        />
+        <label for="">2023</label>
+        <a href="">User Agreement</a>
+        <a href="">Privacy policy</a>
+        <a href="">Community Guidelines</a>
+        <a href="">Cookie Policy</a>
+        <a href="">Copyright Policy</a>
+        <a href="">Send Feedback</a>
+        <label for="languages">languages</label>
+        <select name="languages">
+          <option value="English">English</option>
+          <option value="Arabic">Arabic</option>
+          <option value="Espensih">Espensih</option>
+          <option value="French">French</option>
+        </select>
+      </footer>
+    </div>
+  </body>
+  <script>
+    const elementUserName = document.getElementById("input1");
+    const elementPassword = document.getElementById("input2");
+    const elementDiv2 = document.getElementById("form");
+    const validationMessage = document.getElementById("validationMessage");
+
+    function onHandleSign(ev) {
+      const getUserName = elementUserName.value;
+      const getPassword = elementPassword.value;
+
+      if (getUserName === "sohail@gmail.com" && getPassword === "123456") {
+        window.location.assign("linkedin-home-page.html");
+      } else if (getUserName === "") {
+        elementUserName.style.borderColor = "red";
+        validationMessage.textContent = "Invalid UserName!";
+      } else if (getPassword === "") {
+        elementPassword.style.borderColor = "red";
+        validationMessage.textContent = "Invalid Password!";
+      } else {
+        elementUserName.style.borderColor = "red";
+        elementPassword.style.borderColor = "red";
+        validationMessage.textContent = "Invalid userName and Password";
+        validationMessage.style.width = "53%";
+        // validationMessage.style.right = "-5px";
+        // validationMessage.style.bottom = "-14px";
+        validationMessage.style.textAlign = "center";
+    }
+}
+    const showPassword = () => {
+      const elementPassword = document.getElementById("input2");
+      const elementShowPassword = document.getElementById("showPassword");
+
+      elementPassword.type =
+        elementPassword.type === "password" ? "text" : "password";
+
+      elementShowPassword.textContent =
+        elementPassword.type === "password" ? "Show" : "Hide";
+    };
+  </script>
+</html>
